@@ -26,8 +26,8 @@ class FoodApp extends StatelessWidget {
             ..getTheme(),
         ),
       ],
-      child: BlocConsumer<HomeCubit, HomeState>(
-        listener: (context, state) {},
+      child: BlocBuilder<HomeCubit, HomeState>(
+       
         builder: (context, state) {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
